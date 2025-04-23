@@ -1,0 +1,458 @@
+/* Definindo "Cinzel Decorative" como fonte padrão */
+body {
+    font-family: "Cinzel Decorative", serif !important;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+html, body {
+    height: 100%; /* Garantir que a altura ocupe toda a tela */
+    margin: 0;
+}
+
+.main-content {
+    min-height: 100%; /* Faz o conteúdo ocupar pelo menos toda a altura da tela */
+    padding-bottom: 50px; /* Espaço para o footer não colidir com o conteúdo */
+}
+
+.footer-copy {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000000; /* Fundo para garantir visibilidade */
+    position: relative; /* Posição normal no fluxo do documento */
+    bottom: 0;
+    color: #999;
+}
+
+.footer-copy p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+
+.elemento-rotacionado {
+    transform: rotate(17deg); /* Rotaciona o elemento em 17 graus */
+}
+
+.ep_hero_content { 
+    margin-top: 340px;
+}
+
+.ep_name {
+    font-size: 3rem;
+}
+
+.ep_title {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 7rem;
+}
+
+@font-face {
+    font-family: 'Seagram';
+    src: url('fonts/seagram.woff2') format('woff2'),
+        url('fonts/seagram.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: transparent; /* sem fundo */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+  
+.text-logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Cinzel Decorative', serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+    color: #ffcc00; /* vermelho sangue */
+}
+
+p, .merchandise, .video, .tour, .tour-dates, .tour-date, .footer {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+    min-width: 200px;
+}
+
+.hero_image {
+    background-image: url('images/hero-band.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer {
+    text-decoration: none;
+    margin-top: 20px;
+    color: #000;
+}
+
+.video-section {
+    position: relative;
+    padding: 100px 0;
+    background-color: #000;
+    text-align: center;
+    color: white;
+    background: url('images/texture.jpg') center/cover no-repeat;
+}
+
+.video-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.ornament {
+    font-size: 20px;
+    color: #b00020;
+    padding: 0 10px;
+}
+
+.song-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.video-wrapper {
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.smoke-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/smoke.jpg') repeat;
+    opacity: 0.15;
+    animation: smoke 30s linear infinite;
+    z-index: 1; /* Coloca o overlay atrás do vídeo */
+    pointer-events: none;
+    mix-blend-mode: screen;
+    border-radius: 8px;
+}
+
+.video-wrapper iframe {
+    display: block;
+    z-index: 2; /* Coloca o vídeo à frente da fumaça */
+    position: relative;
+    border: 2px solid #b00020;
+    border-radius: 8px;
+}
+
+@keyframes smoke {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 1000px; }
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    color: #fff;
+}
+
+.stream-now-button {
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+.stream-now-button:hover {
+    background-color: #c31200;
+    border-color: #c31200;
+    color: white;
+    box-shadow: 0 0 10px #c31200;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tour-dates {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.tour-title {
+    font-size: 3rem;
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #b00020;
+}
+
+.tour-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tour-item {
+    font-size: 1.5rem;
+    font-family: 'Teko', sans-serif;
+    margin: 15px 0;
+}
+
+.tour-date {
+    font-weight: bold;
+    color: #b00020;
+}
+
+.tour-name {
+    font-weight: bold;
+    color: white;
+}
+
+.venue {
+    color: #777;
+    font-style: italic;
+}
+
+.tour-item:hover {
+    color: #b00020;
+    transition: color 0.3s ease-in-out;
+}
+
+.merch-section {
+    padding: 80px 20px;
+    background-color: #000;
+    text-align: center;
+    color: white;
+  }
+  
+  .merch-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .merch-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .merch-item {
+    background-color: #111;
+    border: 2px solid #b00020;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 0 20px #b00020;
+  }
+  
+  .merch-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .merch-name {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .merch-desc {
+    font-family: 'Teko', sans-serif;
+    font-size: 1.1rem;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .buy-button {
+    background-color: #b00020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .buy-button:hover {
+    background-color: #ff1a3c;
+    box-shadow: 0 0 10px #ff1a3c;
+  }
+  
+
+  .video-section {
+    padding: 80px 20px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+  }
+  
+  .video-title {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .video-item {
+    width: 360px;
+    height: 215px;
+    border: 2px solid #b00020;
+    box-shadow: 0 0 20px #b00020;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .video-item iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer {
+    background-color: #000;
+    color: #ccc;
+    padding: 40px 20px;
+    font-family: 'Cinzel Decorative', serif;
+    text-align: center;
+    border-top: 2px solid #b00020;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-logo img.rotated-logo {
+    width: 100px;
+    transform: rotate(-5deg);
+    filter: brightness(0.8);
+  }
+  
+  .footer-social a {
+    color: #b00020;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .footer-social a:hover {
+    color: #fff;
+    transform: scale(1.1);
+  }
+  
+  .merch-items {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .merch-item {
+    background-color: #111;
+    color: #eee;
+    border: 1px solid #b00020;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 100%;
+    min-height: 450px;
+    transition: transform 0.3s ease;
+  }
+  
+  .merch-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .merch-img {
+    max-height: 200px;
+    min-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  .buy-button {
+    background-color: #b00020;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    font-family: 'Cinzel Decorative', serif;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin-top: auto;
+  }
+  
+  .buy-button:hover {
+    background-color: #d00028;
+  }
